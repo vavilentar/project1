@@ -52,24 +52,3 @@ var slider = tns({
 		}
 	},
 });
-
-var slider2 = tns({
-	container: '.my-slider2',
-	items: 1,
-	autoplay: true,
-	autoplayButtonOutput: false,
-	controls: false,
-	responsive: {
-		640: {
-			edgePadding: 20,
-			gutter: 20,
-			items: 1
-		},
-		700: {
-			gutter: 30
-		},
-		900: {
-			items: 1
-		}
-	},
-});

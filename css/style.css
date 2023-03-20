@@ -325,6 +325,7 @@ html {
 	margin-top: 25px;
 }
 
+
 .works {
 	background: radial-gradient(circle, #fafafa 15%, rgba(255, 255, 255, 1) 86%);
 	height: fit-content;
@@ -337,6 +338,11 @@ html {
 .info-block {
 	text-align: justify;
 }
+
+.info-block a {
+	color: var(--elements-color)
+}
+
 
 .info-block h3 {
 	font-weight: 500;

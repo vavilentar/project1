@@ -140,10 +140,21 @@ html {
 .header {
 	display: grid;
 	grid-template-columns: .2fr 2fr .5fr;
-	height: 75px;
+	height: 100px;
 	border-bottom: .5px solid rgb(200, 200, 200);
 	justify-items: center;
 	align-items: center;
+}
+.header-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 5px;
+}
+
+.header-links a {
+	font-size: 1.2em;
+	font-weight: 700;
 }
 
 .logotype {
@@ -199,7 +210,7 @@ html {
 .hero {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	height: 600px;
+	height: 650px;
 	align-items: center;
 	justify-items: center;
 	background: radial-gradient(circle, #fafafa 15%, rgba(255, 255, 255, 1) 86%);
@@ -280,6 +291,7 @@ html {
 
 .title {
 	font-size: 1.7em;
+	text-transform: uppercase;
 }
 
 .features-tabs {
@@ -384,20 +396,27 @@ html {
 	color: var(--elements-hover);
 }
 
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: var(--elements-color);
+	margin: 15px 0;
+}
+
 @media (max-width: 426px) {
 	.header {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr;
 		height: fit-content;
 		justify-items: center;
 		padding: 10px 0;
 	}
 
 	.header-nav {
-		grid-row: 2;
+		/* grid-row: 2;
 		grid-column-start: 1;
-		grid-column-end: 3;
-
+		grid-column-end: 3; */
+		display: none;
 	}
 
 	.header-nav ul {
@@ -441,5 +460,8 @@ html {
 	}
 	.sectionCenter {
 		margin-top: 50px;
+	}
+	.title {
+		font-size: 1.4em;
 	}
 }

@@ -6,12 +6,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="shortcut icon" href="./icons/fav.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Кухни на заказ</title>
 </head>
 
 <body>
+	<div id="feedback-modal" class="feedback-modal feedback-modal_closed">
+		<form action="#">
+			<label for="name">Имя</label>
+			<input required name="name" placeholder="Введите Ваше имя" type="text">
+			<label for="phone">Телефон</label>
+			<input required id="phone" name="phone" placeholder="Ваш номер телефона" type="text">
+			<label for="commentary">Комментарий</label>
+			<textarea name="commentary" id="" cols="30" rows="10"></textarea>
+			<button class="send-feedback-btn" type="submit">Отправить заявку</button>
+			<div class="close-modal">
+				<i class="fa-solid fa-x"></i>
+			</div>
+		</form>
+	</div>
 	<header class="header header__container">
 		<div class="logotype">
 			<img src="./icons/kitchen.png" alt="">
@@ -138,7 +153,10 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+	type="text/javascript"></script>
 	<script src="./js/script.js"></script>
 </body>
 

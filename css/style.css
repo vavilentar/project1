@@ -284,6 +284,7 @@ html {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	row-gap: 20px;
 }
 
 .tab {
